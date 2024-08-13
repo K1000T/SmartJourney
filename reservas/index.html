@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyecto de innovacion en TI</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- css enlace  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header-->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#Inicio" class="logo">SMARTJOURNEY</a>
+      <a href="#availability" class="btn">Comprobar disponibilidad</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#Inicio">Inicio</a>
+      <a href="#Nosotros">Nosotros</a>
+      <a href="#Reservas">Reservas</a>
+      <a href="#Servicios">Servicios</a>
+      <a href="#Galeria">Galeria</a>
+      <a href="#Contactanos">Contactanos</a>
+      <a href="#Reseñas">Reseñas</a>
+   </nav>
+
+</section>
+
+<!-- header termina-->
+
+<!-- Inicio-->
+
+<section class="home" id="Inicio">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>Lujosas habitaciones</h3>
+               <a href="#availability" class="btn">Comprobar disponibilidad</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>Comidas y bebidas</h3>
+               <a href="#reservation" class="btn">Realizar una reservacion</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>Lujosos pasillos</h3>
+               <a href="#contact" class="btn">Contactanos</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- Inicio termina -->
+
+<!-- Reservas -->
+
+<section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adultos <span>*</span></p>
+            <select name="Adultos" class="input" required>
+               <option value="1">1 Adultos</option>
+               <option value="2">2 Adultos</option>
+               <option value="3">3 Adultos</option>
+               <option value="4">4 Adultos</option>
+               <option value="5">5 Adultos</option>
+               <option value="6">6 Adultos</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>niños <span>*</span></p>
+            <select name="niños" class="input" required>
+               <option value="-">0 niños</option>
+               <option value="1">1 niños</option>
+               <option value="2">2 niños</option>
+               <option value="3">3 niños</option>
+               <option value="4">4 niños</option>
+               <option value="5">5 niños</option>
+               <option value="6">6 niños</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Habitaciones <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Habitacion</option>
+               <option value="2">2 Habitaciones</option>
+               <option value="3">3 Habitaciones</option>
+               <option value="4">4 Habitaciones</option>
+               <option value="5">5 Habitaciones</option>
+               <option value="6">6 Habitaciones</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Comprobar disponibilidad" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- Reservas termina -->
+
+<!-- Nosotros -->
+
+<section class="about" id="Nosotros">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Excelente personal</h3>
+         <p>Contamos con un equipo profesional y amable, dedicado a brindarte el mejor servicio y hacer que tu estancia sea inolvidable.</p>
+         <a href="#reservation" class="btn">Haz tu reservación</a>
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Excelente culinaria</h3>
+         <p>Disfruta de una experiencia gastronómica excepcional con nuestros platos elaborados por chefs de renombre y utilizando ingredientes frescos.</p>
+         <a href="#contact" class="btn">Contáctanos</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Piscinas</h3>
+         <p>Nuestras piscinas ofrecen un ambiente perfecto para relajarse y disfrutar, con opciones para todas las edades.</p>
+         <a href="#availability" class="btn">Ver disponibilidad</a>
+      </div>
+   </div>
+
+</section>
+
+<!-- Nosotros termina -->
+
+<!-- Servicios -->
+
+<section class="services" id="Servicios">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Comidas y bebidas</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Comer al aire libre</h3>
+         <p>Disfruta de comidas en encantadores espacios al aire libre</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Vista a las playas</h3>
+         <p>Espectaculares vistas al mar para un entorno sereno y revitalizante</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Decoraciones</h3>
+         <p>Exquisitas decoraciones que crean un ambiente acogedor y elegante</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Piscinas</h3>
+         <p>Piscinas para adultos y niños, perfectas para nadar y tomar el sol</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>Lugares de esparcimiento</h3>
+         <p>Áreas recreativas para relajarse y divertirse con amigos y familia</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- Servicios termina -->
+
+<!-- reservacion  -->
+
+<section class="reservation" id="Reservas">
+
+   <form action="" method="post">
+      <h3>Haz tu reservacion</h3>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adultos <span>*</span></p>
+            <select name="Adultos" class="input" required>
+               <option value="1">1 Adulto</option>
+               <option value="2">2 Adultos</option>
+               <option value="3">3 Adultos</option>
+               <option value="4">4 Adultos</option>
+               <option value="5">5 Adultos</option>
+               <option value="6">6 Adultos</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>niños <span>*</span></p>
+            <select name="niños" class="input" required>
+               <option value="-">sin niños</option>
+               <option value="1">1 niño</option>
+               <option value="2">2 niños</option>
+               <option value="3">3 niños</option>
+               <option value="4">4 niños</option>
+               <option value="5">5 niños</option>
+               <option value="6">6 niños</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>habitaciones <span>*</span></p>
+            <select name="habitaciones" class="input" required>
+               <option value="1">1 habitación</option>
+               <option value="2">2 habitaciones</option>
+               <option value="3">3 habitaciones</option>
+               <option value="4">4 habitaciones</option>
+               <option value="5">5 habitaciones</option>
+               <option value="6">6 habitaciones</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Comprobar disponibilidad" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- reservacion termina -->
+
+<!-- galeria  -->
+
+<section class="gallery" id="Galeria">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- galeria termina -->
+
+<!-- Contactanos -->
+
+<section class="contact" id="Contactanos">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Envianos un mensaje</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="ingresa tu nombre" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="ingresa tu correo" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="ingresa tu numero" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Pon tu mensaje" cols="30" rows="10"></textarea>
+         <input type="submit" value="Envia un mensaje" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Preguntas frecuentes</h3>
+         <div class="box active">
+            <h3>¿Cómo cancelar?</h3>
+            <p>Para cancelar tu reserva, por favor, contacta con nuestro servicio de atención al cliente al menos 24 horas antes de tu llegada.</p>
+         </div>
+         <div class="box">
+            <h3>¿Hay disponibilidad?</h3>
+            <p>Para conocer la disponibilidad, revisa nuestra página de reservas o contáctanos directamente.</p>
+         </div>
+         <div class="box">
+            <h3>¿Cuáles son los métodos de pago?</h3>
+            <p>Aceptamos tarjetas de crédito y débito, transferencias bancarias y pagos en efectivo.</p>
+         </div>
+         <div class="box">
+            <h3>¿Cómo reclamar códigos de cupones?</h3>
+            <p>Introduce el código de cupón en el campo correspondiente al momento de hacer tu reserva para aplicar el descuento.</p>
+         </div>
+         <div class="box">
+            <h3>¿Cuáles son los requisitos de edad?</h3>
+            <p>Los huéspedes deben tener al menos 18 años para hacer una reserva. Los menores de edad deben estar acompañados por un adulto.</p>
+         </div>
+      </div>
+      
+
+   </div>
+
+</section>
+
+<!-- Contactanos termina -->
+
+<!-- Reseñas -->
+
+<section class="reviews" id="Reseñas">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/pic-1.png" alt="">
+            <h3>Carlos Fernández</h3>
+            <p>¡Una experiencia increíble! El personal fue muy amable y las instalaciones impecables. Definitivamente volveré.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-2.png" alt="">
+            <h3>María López</h3>
+            <p>La comida es excelente y las vistas al mar son impresionantes. Muy recomendable para unas vacaciones relajantes.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.png" alt="">
+            <h3>Lucho Martínez</h3>
+            <p>Las piscinas son fantásticas y el ambiente es muy acogedor. Pasamos un tiempo maravilloso en familia.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-4.png" alt="">
+            <h3>Martha Gómez</h3>
+            <p>Un lugar perfecto para desconectar y disfrutar. La atención al cliente es insuperable. ¡Muy satisfech!</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-5.png" alt="">
+            <h3>Roberto Sánchez</h3>
+            <p>¡Me encantó! Todo estaba impecable y la decoración es preciosa. Un lugar para recomendar sin duda.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-6.png" alt="">
+            <h3>Karla Díaz</h3>
+            <p>Excelente experiencia desde el check-in hasta el check-out. El personal es muy profesional y atento.</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+
+<!-- Reseñas termina -->
+
+<!-- footer -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:+57 123 456 7890"><i class="fas fa-phone"></i> +57 123 456 7890</a>
+         <a href="tel:+57 987 654 3210"><i class="fas fa-phone"></i> +57 987 654 3210</a>
+         <a href="mailto:smartjourney@example.com"><i class="fas fa-envelope"></i> smartjourney@example.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i>Colombia - Cra. 7 #40 - 62, Bogotá</a>
+      </div>
+
+      <div class="box">
+         <a href="#Inicio">Inicio</a>
+         <a href="#Nosotros">Nosotros</a>
+         <a href="#Reservas">Reservas</a>
+         <a href="#Servicios">Servicios</a>
+         <a href="#Galeria">Galeria</a>
+         <a href="#Contactanos">Contactanos</a>
+         <a href="#Reseñas">Reseñas</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="map-container">
+      <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.911319896775!2d-74.0672394!3d4.6284928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a8193f1c9f%3A0xf93431640f134c07!2sPontificia%20Universidad%20Javeriana!5e0!3m2!1ses!2sco!4v1684508524865!5m2!1ses!2sco" 
+         width="1160" 
+         height="450" 
+         style="border:0;" 
+         allowfullscreen="" 
+         loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+   </div>
+
+   <div class="credit">&copy; 2024 SMARTJOURNEY | Todos los derechos reservados.</div>
+
+
+
+</section>
+
+
+<!-- footer termina -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- js enlace -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
